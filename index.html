@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTORA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+
+</head>
+
+<body class="font-poppins m-0 p-0">
+    <!-- NavBar -->
+
+    <section id="offernav" class="text-center text-xl font-semibold flex justify-evenly bg-purple-500 ">
+        <h1>Sign Up and GET 20% OFF on your First Order</h1>
+        <p id="offerclose" class="cursor-pointer">X</p>
+    </section>
+
+
+    <section id="navbar" class="flex justify-between items-center bg-white shadow-md px-4 py-3 sticky top-0 z-30">
+        <h1 class="font-bold text-2xl">VISTORA</h1>
+
+        <!-- Desktop Nav Links -->
+        <div id="navlink" class="hidden md:flex gap-6">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="#new-arrival" class="hover:underline">New Arrival</a>
+            <a href="#most-wanted" class="hover:underline">Most Wanted</a>
+            <a href="collections.html" class="hover:underline">Collections</a>
+            <a href="./contact.html" class="hover:underline">Contact Us</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="navbar-menu-toggle block md:hidden">
+            <i id="side-navbar-activate" class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+        </div>
+    </section>
+
+    <!--Side Navbar-->
+
+    <div class="side-navbar fixed top-0 left-0 w-2/3 h-full bg-gray-900 text-white z-50 p-5">
+        <div class="flex justify-end">
+            <i id="side-navbar-close" class="fa-solid fa-xmark text-2xl cursor-pointer"></i>
+        </div>
+        <div class="mt-10 space-y-5">
+            <a href="index.html" class="block hover:underline">Home</a>
+            <a href="#new-arrival" class="block hover:underline">New Arrival</a>
+            <a href="#most-wanted" class="block hover:underline">Most Wanted</a>
+            <a href="collections.html" class="block hover:underline">Collections</a>
+            <a href="./contact.html" class="block hover:underline">Contact Us</a>
+        </div>
+    </div>
+
+
+    <div class="container mx-auto">
+
+        <!-- Slider -->
+        <div class="relative w-full overflow-hidden h-[500px]">
+
+            <!-- Left Button -->
+            <button id="slider-left-activate"
+                class="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl bg-black/30 p-2 rounded-full">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+
+            <!-- Right Button -->
+            <button id="slider-right-activate"
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 text-white text-3xl bg-black/30 p-2 rounded-full">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+
+            <!-- Slider Text Content -->
+            <div class="absolute inset-0 flex items-center justify-center z-10 text-center text-white px-4 flex-col">
+                <h1 class="text-2xl md:text-5xl font-bold">Level up your style with our</h1>
+                <h4 class="text-lg md:text-2xl mb-4">Summer Collections</h4>
+                <button class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition">
+                    Shop Now <i class="fa-solid fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <!-- Image Slider Track -->
+            <div class="w-full h-full">
+                <div id="slider-images" class="flex transition-transform duration-500 ease-in-out w-full h-full">
+                    <img src="nani (1).jpg" class="w-full h-full object-cover flex-shrink-0" alt="">
+                    <img src="Hertical Texture.png" class="w-full h-full object-cover flex-shrink-0" alt="">
+                    <img src="Hertical Texture2.png" class="w-full h-full object-cover flex-shrink-0" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-3xl font-extrabold p-2 mt-10 hidden md:flex">Brands</h1>
+    <section id="brands-container" class="flex justify-between items-center mt-8 p-10 hidden md:flex">
+        <div id="brands">
+            <img src="puma.png" class="w-20">
+            <P>PUMA</P>
+        </div>
+
+        <div id="brands">
+            <img src="nf.avif" class="w-24 h-20">
+            <P class="">NORTH FACE</P>
+        </div>
+
+        <div id="brands">
+            <img src="adidas.png" class="w-20">
+            <P>ADIDAS</P>
+        </div>
+
+        <div id="brands">
+            <img src="nike.png" class="w-20">
+            <P>NIKE</P>
+        </div>
+
+        <div id="brands">
+            <img src="twitch.png" class="w-20">
+            <P>TWITCH</P>
+        </div>
+
+        <div id="brands">
+            <img src="6516d204875959d9c40d1973_MRYbrxnS5S3I1shUjYbg.avif" class="w-20">
+            <P>GUCCI</P>
+        </div>
+    </section>
+
+    <section id="customer-experience" class="flex justify-between mt-10 mb-10 p-5">
+        <div>
+            <h1 class="text-3xl font-extrabold" id="cutomer-title">We Provide</h1>
+            <h1 class="text-3xl font-extrabold" id="cutomer-title">Best Shopping experience</h1>
+        </div>
+        <div>
+            <h1 class="text-lg hidden md:flex" id="customer-title2">|| We ensure that our customer have the best
+                shopping
+                experience</h1>
+        </div>
+    </section>
+
+    <section id="customer-experience-2" class="justify-between mt-10 mb-10 p-5 gap-4 grid grid-cols-2 md:grid-cols-4">
+        <div class="text-center bg-gray-100 p-5 rounded-lg">
+            <i class="fa-regular fa-circle-check text-5xl" style="color: #0a0a0a;"></i>
+            <p class="text-2xl font-bold mt-3">Original Products</p>
+            <p class="mt-3">Dare to be different,
+                Dare to be you.
+                Explore our original collections,
+                And make every moment fashion-forward.</p>
+        </div>
+        <div class="text-center bg-gray-100 p-5 rounded-lg">
+            <i class="fa-solid fa-face-smile-wink text-5xl" style="color: #0a0a0a;"></i>
+            <p class="text-2xl font-bold mt-3">Satisfaction Guarantee</p>
+            <p class="mt-3">Dare to be different,
+                Dare to be you.
+                Explore our original collections,
+                And make every moment fashion-forward.</p>
+        </div>
+        <div class="text-center bg-gray-100 p-5 rounded-lg">
+            <i class="fa-solid fa-fire-flame-curved text-5xl" style="color: #050505;"></i>
+            <p class="text-2xl font-bold mt-3">New Arrival Evereday</p>
+            <p class="mt-3">Dare to be different,
+                Dare to be you.
+                Explore our original collections,
+                And make every moment fashion-forward.</p>
+        </div>
+
+        <div class="text-center bg-gray-100 p-5 rounded-lg">
+            <i class="fa-solid fa-truck-fast text-5xl" style="color: #0d0d0d;"></i>
+            <p class="text-2xl font-bold mt-3">Fast and Free Shipping</p>
+            <p class="mt-3">Dare to be different,
+                Dare to be you.
+                Explore our original collections,
+                And make every moment fashion-forward.</p>
+        </div>
+
+    </section>
+
+    <h1 class="text-3xl font-bold p-2">New Arrivals</h1>
+
+    <section id="new-arrival" class="data">
+        <div class="justify-between mt-8 mb-10 p-10 gap-10 grid grid-cols-2 md:grid-cols-4">
+
+            <div class="bg-gray-200 p-5 rounded-lg relative inline transform hover:-translate-y-2">
+                <img src="images.jpg" alt="" class="w-full h-64 rounded-md">
+                <div class="overlay"></div>
+                <button
+                    class="absolute pr-3 pl-3 pt-1 pb-1 mt-3 top-52 left-14 border-none rounded-lg z-10 bg-white p-2 text-black hover:underline hover:bg-pink-100 ">Shop
+                    Now</button>
+            </div>
+            <div class="bg-gray-200 p-5 rounded-lg  relative  transform hover:-translate-y-2">
+                <img src="images (1).jpg" alt="" class="w-full h-64 rounded-md">
+                <div class="overlay"></div>
+                <button
+                    class="absolute pr-3 pl-3 pt-1 pb-1 mt-3 top-52 left-24 border-none rounded-lg z-10 bg-white p-2 text-black hover:underline hover:bg-pink-100">Shop
+                    Now</button>
+            </div>
+            <div class="bg-gray-200 p-5 rounded-lg  relative  transform hover:-translate-y-2">
+                <img src="images (2).jpg" alt="" class="w-full h-64 rounded-md">
+                <div class="overlay"></div>
+                <button
+                    class="absolute pr-3 pl-3 pt-1 pb-1 mt-3 top-52 left-24 border-none rounded-lg z-10 bg-white p-2 text-black hover:underline hover:bg-pink-100">Shop
+                    Now</button>
+            </div>
+            <div class="bg-gray-200 p-5 rounded-lg  relative  transform hover:-translate-y-2">
+                <img src="download (2).jpg" alt="" class="w-full h-64 rounded-md">
+                <div class="overlay"></div>
+                <button
+                    class="absolute pr-3 pl-3 pt-1 pb-1 mt-3 top-52 left-14 border-none rounded-lg z-10 bg-white p-2 text-black hover:underline hover:bg-pink-100">Shop
+                    Now</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <h1 class="text-3xl font-bold p-2">Women Jungle</h1>
+
+
+
+    <div id="most-wanted" class="flex gap-20 overflow-x-auto justify-between mt-10 p-2 scrollbar-hide">
+        <div id="most-wanted-item" class="relative flex-shrink-0 w-48">
+            <img src="pic.png" alt="">
+            <i class="fa-regular fa-heart absolute w-8 bottom-16 right-5 bg-white text-black rounded-b-full rounded-t-full rounded-r-full rounded-l-full text-l p-2 hover:bg-pink-400"
+                style="color: #0d0d0d;"></i>
+            <p
+                class="absolute top-1 bg-red-700 text-white w-10 text-center p-1 rounded-lg left-1 cursor-pointer hover:text-black">
+                Sale</p>
+        </div>
+
+        <div id="most-wanted-item" class="relative  flex-shrink-0 w-48">
+            <img src="Untitled design.png" alt="">
+            <i class="fa-regular fa-heart absolute w-8 bottom-16 right-5 bg-white text-black rounded-b-full rounded-t-full rounded-r-full rounded-l-full text-l p-2 hover:bg-pink-400"
+                style="color: #0d0d0d;"></i>
+            <p
+                class="absolute top-1 bg-red-700 text-white w-10 text-center p-1 rounded-lg left-1 cursor-pointer hover:text-black">
+                Sale</p>
+        </div>
+
+        <div id="most-wanted-item" class="relative flex-shrink-0 w-48">
+            <img src="pic3.png" alt="">
+            <i class="fa-regular fa-heart absolute w-8 bottom-16 right-5 bg-white text-black rounded-b-full rounded-t-full rounded-r-full rounded-l-full text-l p-2 hover:bg-pink-400"
+                style="color: #0d0d0d;"></i>
+            <p
+                class="absolute top-1 bg-red-700 text-white w-10 text-center p-1 rounded-lg left-1 cursor-pointer hover:text-black">
+                Sale</p>
+        </div>
+
+        <div id="most-wanted-item" class="relative flex-shrink-0 w-48">
+            <img src="pic4.png">
+            <i class="fa-regular fa-heart absolute w-8 bottom-16 right-5 bg-white text-black rounded-b-full rounded-t-full rounded-r-full rounded-l-full text-l p-2 hover:bg-pink-400"
+                style="color: #0d0d0d;"></i>
+            <p
+                class="absolute top-1 bg-red-700 text-white w-10 text-center p-1 rounded-lg left-1 cursor-pointer hover:text-black">
+                Sale</p>
+        </div>
+
+        <div id="most-wanted-item" class="relative flex-shrink-0 w-48">
+            <img src="pic5.png" alt="">
+            <i class="fa-regular fa-heart absolute w-8 bottom-16 right-5 bg-white text-black rounded-b-full rounded-t-full rounded-r-full rounded-l-full text-l p-2 hover:bg-pink-400"
+                style="color: #0d0d0d;"></i>
+            <p
+                class="absolute top-1 bg-red-700 text-white w-10 text-center p-1 rounded-lg left-1 cursor-pointer hover:text-black">
+                Sale</p>
+        </div>
+
+        <div id="most-wanted-item" class="relative flex-shrink-0 w-48">
+            <img src="pic6.png" alt="">
+            <i class="fa-regular fa-heart absolute w-8 bottom-16 right-5 bg-white text-black rounded-b-full rounded-t-full rounded-r-full rounded-l-full text-l p-2 hover:bg-pink-400"
+                style="color: #0d0d0d;"></i>
+            <p
+                class="absolute top-1 bg-red-700 text-white w-10 text-center p-1 rounded-lg left-1 cursor-pointer hover:text-black">
+                Sale</p>
+        </div>
+
+        <div id="most-wanted-item" class="relative flex-shrink-0 w-48">
+            <img src="pic7.png" alt="">
+            <i class="fa-regular fa-heart absolute w-8 bottom-16 right-5 bg-white text-black rounded-b-full rounded-t-full rounded-r-full rounded-l-full text-l p-2 hover:bg-pink-400"
+                style="color: #0d0d0d;"></i>
+            <p
+                class="absolute top-1 bg-red-700 text-white w-10 text-center p-1 rounded-lg left-1 cursor-pointer hover:text-black">
+                Sale</p>
+        </div>
+
+        <div id="most-wanted-item" class="relative flex-shrink-0 w-48">
+            <img src="pic8.png" alt="">
+            <i class="fa-regular fa-heart absolute w-8 bottom-16 right-5 bg-white text-black rounded-b-full rounded-t-full rounded-r-full rounded-l-full text-l p-2 hover:bg-pink-400"
+                style="color: #0d0d0d;"></i>
+            <p
+                class="absolute top-1 bg-red-700 text-white w-10 text-center p-1 rounded-lg left-1 cursor-pointer hover:text-black">
+                Sale</p>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center bg-purple-500 p-5 text-xl">
+        <div>
+            <img src="foot - Copy.jpg" class="w-full h-full hidden md:flex" alt="">
+        </div>
+        <div class="text-white" style="padding: 5%;">
+            <h2 class="font-extrabold text-7xl p-2">Limited Offer</h2>
+            <h4 class="font-semibold mt-2">Offer for the first 10 customers</h4>
+            <button class="mt-10 bg-red-700 text-white p-4 border-none rounded-lg hover:text-purple-600">Shop
+                Now</button>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-10 p-3">
+        <h1 class="text-3xl font-extrabold">Join Our News Letter</h1>
+        <p class="text-xl mt-2">Signup for our email newspaper to get exclusive discounts,updates,and more</p>
+        <input type="text" class="border mt-2 border-black container p-3">
+        <button class="bg-purple-700 text-white rounded-3xl p-2 mt-5 hover:text-black">Subscribe</button>
+    </div>
+
+    <section class="bg-purple-500 text-white p-10">
+
+        <div>
+            <h1 class="text-2xl font-bold mb-1">Vistora</h1>
+            <p class="text-lg mb-1">Dare to be you.Explore our original collections,And make every moment
+                fashion-forward.</p>
+        </div>
+        <div class="gap-4 flex text-xl mb-1">
+            <i class="fa-brands fa-instagram" style="color: #fc03db;"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <p class="text">@2003 Vistora.com</p>
+
+    </section>
+
+    <script>
+        const menuBtn = document.getElementById("side-navbar-activate");
+        const closeBtn = document.getElementById("side-navbar-close");
+        const sideNavbar = document.querySelector(".side-navbar");
+        const offerClose = document.getElementById("offerclose");
+        const offerNav = document.getElementById("offernav");
+
+        menuBtn.addEventListener("click", () => {
+            sideNavbar.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            sideNavbar.classList.remove("active");
+        });
+
+        offerClose.addEventListener("click", () => {
+            offerNav.style.display = "none";
+        });
+
+
+        const sliderTrack = document.getElementById("slider-images");
+        const leftBtn = document.getElementById("slider-left-activate");
+        const rightBtn = document.getElementById("slider-right-activate");
+
+        let currentIndex = 0;
+        const totalSlides = sliderTrack.children.length;
+
+        function updateSlider() {
+            const slideWidth = sliderTrack.clientWidth;
+            sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+
+        rightBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        });
+
+        leftBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+
+        window.addEventListener("resize", updateSlider); // update on resize
+    </script>
+
+</body>
+
+</html>

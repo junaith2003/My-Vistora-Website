@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISTORA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+
+</head>
+
+<body class="font-poppins m-0 p-0">
+    <!-- NavBar -->
+
+    <section id="offernav" class="text-center text-xl font-semibold flex justify-evenly bg-purple-500">
+        <h1>Sign Up and GET 20% OFF on your First Order</h1>
+        <p id="offerclose">X</p>
+    </section>
+
+
+    <section id="navbar" class="flex justify-between items-center bg-white shadow-md px-4 py-3 sticky top-0 z-30">
+        <h1 class="font-bold text-2xl">VISTORA</h1>
+
+        <!-- Desktop Nav Links -->
+        <div id="navlink" class="hidden md:flex gap-6">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="#new-arrival" class="hover:underline">New Arrival</a>
+            <a href="#most-wanted" class="hover:underline">Most Wanted</a>
+            <a href="collections.html" class="hover:underline">Collections</a>
+            <a href="./contact.html" class="hover:underline">Contact Us</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <div class="navbar-menu-toggle block md:hidden">
+            <i id="side-navbar-activate" class="fa-solid fa-bars text-2xl cursor-pointer"></i>
+        </div>
+    </section>
+
+
+
+
+    <!--Side Navbar-->
+
+    <div class="side-navbar fixed top-0 left-0 w-2/3 h-full bg-gray-900 text-white z-50 p-5">
+        <div class="flex justify-end">
+            <i id="side-navbar-close" class="fa-solid fa-xmark text-2xl cursor-pointer"></i>
+        </div>
+        <div class="mt-10 space-y-5">
+            <a href="index.html" class="block hover:underline">Home</a>
+            <a href="#new-arrival" class="block hover:underline">New Arrival</a>
+            <a href="#most-wanted" class="block hover:underline">Most Wanted</a>
+            <a href="collections.html" class="block hover:underline">Collections</a>
+            <a href="./contact.html" class="block hover:underline">Contact Us</a>
+        </div>
+    </div>
+
+
+
+    <div class="flex ">
+        <aside class="border-r border-gray-500 shadow-lg  w-1/4 pr-0">
+            <div class="p-4 ">
+                <h1 class="text-2xl font-bold p-2">Occasion</h1>
+                <div class="p-2 text-xl">
+                    <input type="checkbox" id="occasion1" name="occasion1" value="ethnic"
+                        class="mb-3 font-medium">Ethnic
+                    <br>
+                    <input type="checkbox" id="occasion1" name="occasion1" value="formal"
+                        class="mb-3 font-medium">Formal
+                    <br>
+                    <input type="checkbox" id="occasion1" name="occasion1" value="wedding"
+                        class="mb-3 font-medium">Wedding
+                </div>
+
+                <h1 class="text-2xl font-bold p-2">Colors</h1>
+                <div class="p-2 text-xl">
+                    <input type="checkbox" id="color1" name="color1" value="red" class="mb-3 font-medium">Red <br>
+                    <input type="checkbox" id="color1" name="color1" value="blue" class="mb-3 font-medium">Blue <br>
+                    <input type="checkbox" id="color1" name="color1" value="white" class="mb-3 font-medium">White <br>
+                    <input type="checkbox" id="color1" name="color1" value="green" class="mb-3 font-medium">Green
+                </div>
+
+                <h1 class="text-2xl font-bold p-2">Arrivals</h1>
+                <div class="p-2 text-xl">
+                    <input type="checkbox" id="arrival" name="arrival" value="new" class="mb-3 font-medium">New <br>
+                    <input type="checkbox" id="arrival" name="arrival" value="old" class="mb-3 font-medium">Old
+                </div>
+            </div>
+        </aside>
+
+
+
+        <div class="w-3/4 pl-6">
+            <div class="flex justify-center items-center p-4 container">
+                <input type="text" placeholder="Search" class="p-2 border rounded-md w-full shadow-lg border-none">
+            </div>
+            <div class=" gap-4 p-6 mt-1 grid grid-cols-2 md:grid-cols-3">
+                <div class="text-purple-800 product" data-name="Yellow Frock" data-occasion="formal" data-color="yellow"
+                    data-arrival="new">
+                    <img src="pic2.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Yellow Frock</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+                <div class="text-purple-800 product" data-name="Blue Gowny" data-occasion="formal" data-color="blue"
+                    data-arrival="old">
+                    <img src="pic4.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Blue Gowny</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+                <div class="text-purple-800 product" data-name="Weddy Bubble" data-occasion="wedding" data-color="red"
+                    data-arrival="new">
+                    <img src="pic3.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Weddy Bubble</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+                <div class="text-purple-800 product" data-name="Magnum Opus" data-occasion="Ethnic" data-color="red"
+                    data-arrival="new">
+                    <img src="pic5.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Magnum Opus</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+                <div class="text-purple-800 product" data-name="Greeny Sweeney" data-occasion="wedding"
+                    data-color="green" data-arrival="new">
+                    <img src="pic6.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Greeny Sweeney</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+                <div class="text-purple-800 product" data-name="Aditi Red Opus" data-occasion="Ethnic" data-color="red"
+                    data-arrival="new">
+                    <img src="pic7.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Aditi Red Opus</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+                <div class="text-purple-800 product" data-name="Black Wedding" data-occasion="Ethnic" data-color=""
+                    data-arrival="old">
+                    <img src="pic8.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Black Wedding</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+                <div class="text-purple-800 product" data-name="Formal Gown" data-occasion="formal" data-color="yellow"
+                    data-arrival="new">
+                    <img src="pic2.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Formal Gown</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+                <div class="text-purple-800 product" data-name="Blue Gowny" data-occasion="formal" data-color="blue"
+                    data-arrival="old">
+                    <img src="pic4.png" alt="">
+                    <h2 class="font-extrabold text-2xl">Blue Gowny</h2>
+                    <p class="text-lg font-semibold">$28</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <script>
+            const menuBtn = document.getElementById("side-navbar-activate");
+            const closeBtn = document.getElementById("side-navbar-close");
+            const sideNavbar = document.querySelector(".side-navbar");
+            const offerClose = document.getElementById("offerclose");
+            const offerNav = document.getElementById("offernav");
+
+            menuBtn?.addEventListener("click", () => {
+                sideNavbar.classList.add("active");
+            });
+
+            closeBtn?.addEventListener("click", () => {
+                sideNavbar.classList.remove("active");
+            });
+
+            offerClose?.addEventListener("click", () => {
+                offerNav.style.display = "none";
+            });
+
+            // STEP 2 Filtering Logic
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            const searchInput = document.querySelector('input[type="text"]');
+            const products = document.querySelectorAll('.product');
+
+            function filterProducts() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const selectedValues = Array.from(checkboxes)
+                    .filter(cb => cb.checked)
+                    .map(cb => cb.value);
+
+                products.forEach(product => {
+                    const textMatch = product.innerText.toLowerCase().includes(searchTerm);
+                    const occasion = product.dataset.occasion;
+                    const color = product.dataset.color;
+                    const arrival = product.dataset.arrival;
+
+                    const occasionMatch = selectedValues.includes(occasion);
+                    const colorMatch = selectedValues.includes(color);
+                    const arrivalMatch = selectedValues.includes(arrival);
+
+                    const checkboxMatch = selectedValues.length === 0 || occasionMatch || colorMatch || arrivalMatch;
+
+                    if (textMatch && checkboxMatch) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            }
+
+            checkboxes.forEach(cb => cb.addEventListener('change', filterProducts));
+            searchInput.addEventListener('input', filterProducts);
+        </script>
+
+
+</body>
+
+</html>
